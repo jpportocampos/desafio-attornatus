@@ -6,6 +6,7 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.time.LocalDate;
+import java.util.List;
 
 @Data
 @AllArgsConstructor
@@ -26,5 +27,5 @@ public class Pessoa {
     private LocalDate dataNascimento;
 
     @OneToOne(mappedBy = "pessoa")
-    private Endereco endereco;
+    private List<Endereco> endereco;
 }
