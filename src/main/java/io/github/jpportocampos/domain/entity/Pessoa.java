@@ -26,6 +26,6 @@ public class Pessoa {
     @Column(name = "data_nascimento")
     private LocalDate dataNascimento;
 
-    @OneToOne(mappedBy = "pessoa")
-    private List<Endereco> endereco;
+    @OneToMany(mappedBy = "pessoa")
+    private List<Endereco> enderecos;
 }

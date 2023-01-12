@@ -6,7 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="31e6fbec-3b79-44ef-a34e-53401ee7777a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/jpportocampos/domain/entity/Endereco.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/jpportocampos/domain/entity/Endereco.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/jpportocampos/domain/entity/Pessoa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/jpportocampos/domain/entity/Pessoa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/jpportocampos/domain/repository/Pessoas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/jpportocampos/domain/repository/Pessoas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/jpportocampos/rest/controller/PessoaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/jpportocampos/rest/controller/PessoaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/jpportocampos/rest/dto/EnderecoDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/jpportocampos/rest/dto/EnderecoDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/jpportocampos/rest/dto/PessoaDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/jpportocampos/rest/dto/PessoaDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/github/jpportocampos/service/PessoaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/jpportocampos/service/PessoaService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/jpportocampos/service/impl/PessoaServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/jpportocampos/service/impl/PessoaServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +23,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -40,16 +47,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\jppor\desenvolvimento\meus-projetos\desafio-attornatus\src\main\java\io\github\jpportocampos\domain" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="DesafioApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="io.github.jpportocampos.DesafioApplication" />
+      <module name="desafio-attornatus" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.github.jpportocampos.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.DesafioApplication" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">

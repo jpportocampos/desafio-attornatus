@@ -18,7 +18,7 @@ public class Endereco {
     @Column(name = "id")
     private Integer id;
 
-    @OneToOne
+    @ManyToOne
     @JoinColumn(name = "pessoa_id")
     private Pessoa pessoa;
 
@@ -32,5 +32,5 @@ public class Endereco {
     private Integer numero;
 
     @Column(name = "cidade")
-    private Integer cidade;
+    private String cidade;
 }
