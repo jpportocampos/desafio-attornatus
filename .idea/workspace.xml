@@ -6,12 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="31e6fbec-3b79-44ef-a34e-53401ee7777a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/jpportocampos/domain/entity/Endereco.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/jpportocampos/domain/entity/Endereco.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/jpportocampos/domain/entity/Pessoa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/jpportocampos/domain/entity/Pessoa.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/jpportocampos/domain/repository/Pessoas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/jpportocampos/domain/repository/Pessoas.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/github/jpportocampos/rest/controller/PessoaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/jpportocampos/rest/controller/PessoaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/jpportocampos/rest/dto/EnderecoDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/jpportocampos/rest/dto/EnderecoDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/jpportocampos/rest/dto/PessoaDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/jpportocampos/rest/dto/PessoaDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/github/jpportocampos/service/PessoaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/jpportocampos/service/PessoaService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/github/jpportocampos/service/impl/PessoaServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/jpportocampos/service/impl/PessoaServiceImpl.java" afterDir="false" />
     </list>

@@ -41,6 +41,19 @@ public class PessoaController {
                 .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "Pessoa não encontrada."));
     }
 
+    @PutMapping("{id}")
+    public void update(@PathVariable Integer id, @RequestBody PessoaDTO dto) {
+        Pessoa pessoa = service.salvar(id, dto);
+    }
+
+    @GetMapping
+    public List<InformacoesPessoaDTO> listarPessoas() {
+        return service
+                .obterTodos()
+                .stream()
+                .map(p -> converter(p)).collect(Collectors.toList());
+    }
+
     private InformacoesPessoaDTO converter(Pessoa pessoa) {
         return InformacoesPessoaDTO
                 .builder()

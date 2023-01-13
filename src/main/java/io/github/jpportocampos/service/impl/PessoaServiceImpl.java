@@ -38,13 +38,56 @@ public class PessoaServiceImpl implements PessoaService {
     }
 
     @Override
+    @Transactional
+    public Pessoa salvar(Integer id, PessoaDTO dto) {
+        Pessoa pessoa = repository.findById(id).get();
+        pessoa.setId(id);
+        pessoa.setNome(dto.getNome());
+        pessoa.setDataNascimento(dto.getDataNascimento());
+
+        List<Endereco> enderecos = alterarEnderecos(pessoa, dto.getEnderecos());
+        repository.save(pessoa);
+        enderecosRepository.saveAll(enderecos);
+        pessoa.setEnderecos(enderecos);
+        return pessoa;
+    }
+
+    @Override
     public Optional<Pessoa> obterPessoaCompleto(Integer id) {
         return repository.findByIdFetchItens(id);
+    }
+
+    public List<Pessoa> obterTodos() {
+        List<Pessoa> pessoas = repository.findAll();
+
+        if (pessoas.isEmpty()) {
+            throw new RegraNegocioException("Não existem pessoas salvas.");
+        }
+
+        return pessoas;
     }
 
     private List<Endereco> converterEnderecos(Pessoa pessoa, List<EnderecoDTO> enderecos) {
         if (enderecos.isEmpty()) {
             throw new RegraNegocioException("Uma pessoa precisa possuir pelo menos um endereço.");
+        }
+
+        return enderecos
+                .stream()
+                .map(dto -> {
+                    Endereco endereco = new Endereco();
+                    endereco.setPessoa(pessoa);
+                    endereco.setCep(dto.getCep());
+                    endereco.setCidade(dto.getCidade());
+                    endereco.setNumero(dto.getNumero());
+                    endereco.setLogradouro(dto.getLogradouro());
+                    return endereco;
+                }).collect(Collectors.toList());
+    }
+
+    private List<Endereco> alterarEnderecos(Pessoa pessoa, List<EnderecoDTO> enderecos) {
+        if (enderecos.isEmpty()) {
+            return pessoa.getEnderecos();
         }
 
         return enderecos
