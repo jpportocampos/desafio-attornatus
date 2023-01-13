@@ -2,7 +2,7 @@ package io.github.jpportocampos.rest.controller;
 
 import io.github.jpportocampos.domain.entity.Endereco;
 import io.github.jpportocampos.domain.entity.Pessoa;
-import io.github.jpportocampos.rest.dto.InformacaoEnderecoDTO;
+import io.github.jpportocampos.rest.dto.InformacoesEnderecoDTO;
 import io.github.jpportocampos.rest.dto.InformacoesPessoaDTO;
 import io.github.jpportocampos.rest.dto.PessoaDTO;
 import io.github.jpportocampos.service.PessoaService;
@@ -47,7 +47,7 @@ public class PessoaController {
     }
 
     @GetMapping("/enderecos/{id}")
-    public List<InformacaoEnderecoDTO> getEnderecos(@PathVariable Integer id) {
+    public List<InformacoesEnderecoDTO> getEnderecos(@PathVariable Integer id) {
         List<Endereco> enderecos = service.obterEnderecos(id);
         return converter(enderecos);
     }
@@ -70,13 +70,13 @@ public class PessoaController {
                 .build();
     }
 
-    private List<InformacaoEnderecoDTO> converter(List<Endereco> enderecos) {
+    private List<InformacoesEnderecoDTO> converter(List<Endereco> enderecos) {
         if(CollectionUtils.isEmpty(enderecos)) {
             return Collections.emptyList();
         }
 
         return enderecos.stream().map(
-                endereco -> InformacaoEnderecoDTO
+                endereco -> InformacoesEnderecoDTO
                         .builder()
                         .logradouro(endereco.getLogradouro())
                         .cep(endereco.getCep())

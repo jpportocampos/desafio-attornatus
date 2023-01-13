@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class InformacaoEnderecoDTO {
+public class InformacoesEnderecoDTO {
 
     private String logradouro;
     private Integer cep;

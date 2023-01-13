@@ -6,10 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="31e6fbec-3b79-44ef-a34e-53401ee7777a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/jpportocampos/domain/repository/Pessoas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/jpportocampos/domain/repository/Pessoas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/github/jpportocampos/rest/controller/PessoaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/jpportocampos/rest/controller/PessoaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/jpportocampos/service/PessoaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/jpportocampos/service/PessoaService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/jpportocampos/service/impl/PessoaServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/jpportocampos/service/impl/PessoaServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/jpportocampos/rest/dto/InformacaoEnderecoDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/jpportocampos/rest/dto/InformacoesEnderecoDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/jpportocampos/rest/dto/InformacoesPessoaDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/jpportocampos/rest/dto/InformacoesPessoaDTO.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +54,7 @@
       <recent name="C:\Users\jppor\desenvolvimento\meus-projetos\desafio-attornatus\src\main\java\io\github\jpportocampos\domain" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.PessoaControllerTest">
     <configuration name="DesafioApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="io.github.jpportocampos.DesafioApplication" />
       <module name="desafio-attornatus" />
@@ -68,8 +68,41 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PessoaControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="desafio-attornatus" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.github.jpportocampos.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="io.github.jpportocampos.controller" />
+      <option name="MAIN_CLASS_NAME" value="io.github.jpportocampos.controller.PessoaControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PessoaControllerTest.cadastrarPessoaTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="desafio-attornatus" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.github.jpportocampos.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="io.github.jpportocampos.controller" />
+      <option name="MAIN_CLASS_NAME" value="io.github.jpportocampos.controller.PessoaControllerTest" />
+      <option name="METHOD_NAME" value="cadastrarPessoaTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PessoaControllerTest" />
+        <item itemvalue="JUnit.PessoaControllerTest.cadastrarPessoaTest" />
         <item itemvalue="Application.DesafioApplication" />
       </list>
     </recent_temporary>

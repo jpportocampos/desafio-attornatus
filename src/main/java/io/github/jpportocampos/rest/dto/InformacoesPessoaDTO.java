@@ -16,5 +16,5 @@ public class InformacoesPessoaDTO {
     private Integer codigo;
     private String nome;
     private String dataNascimento;
-    private List<InformacaoEnderecoDTO> enderecos;
+    private List<InformacoesEnderecoDTO> enderecos;
 }
