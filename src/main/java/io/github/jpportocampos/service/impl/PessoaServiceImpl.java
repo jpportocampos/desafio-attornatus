@@ -67,6 +67,17 @@ public class PessoaServiceImpl implements PessoaService {
         return pessoas;
     }
 
+    @Override
+    public List<Endereco> obterEnderecos(Integer id) {
+        List<Endereco> enderecos = repository.findByIdFetchEnderecos(id);
+
+        if (enderecos.isEmpty()) {
+            throw new RegraNegocioException("Não existem endereços salvos");
+        }
+
+        return enderecos;
+    }
+
     private List<Endereco> converterEnderecos(Pessoa pessoa, List<EnderecoDTO> enderecos) {
         if (enderecos.isEmpty()) {
             throw new RegraNegocioException("Uma pessoa precisa possuir pelo menos um endereço.");

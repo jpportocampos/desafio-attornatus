@@ -43,7 +43,13 @@ public class PessoaController {
 
     @PutMapping("{id}")
     public void update(@PathVariable Integer id, @RequestBody PessoaDTO dto) {
-        Pessoa pessoa = service.salvar(id, dto);
+        service.salvar(id, dto);
+    }
+
+    @GetMapping("/enderecos/{id}")
+    public List<InformacaoEnderecoDTO> getEnderecos(@PathVariable Integer id) {
+        List<Endereco> enderecos = service.obterEnderecos(id);
+        return converter(enderecos);
     }
 
     @GetMapping

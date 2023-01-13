@@ -1,6 +1,5 @@
 package io.github.jpportocampos.rest.dto;
 
-import io.github.jpportocampos.domain.entity.Endereco;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

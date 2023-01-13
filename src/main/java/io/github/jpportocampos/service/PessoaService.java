@@ -1,5 +1,6 @@
 package io.github.jpportocampos.service;
 
+import io.github.jpportocampos.domain.entity.Endereco;
 import io.github.jpportocampos.domain.entity.Pessoa;
 import io.github.jpportocampos.rest.dto.PessoaDTO;
 
@@ -14,4 +15,6 @@ public interface PessoaService {
     Optional<Pessoa> obterPessoaCompleto(Integer id);
 
     List<Pessoa> obterTodos();
+
+    List<Endereco> obterEnderecos(Integer id);
 }
