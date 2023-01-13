@@ -81,6 +81,9 @@ public class PessoaServiceImpl implements PessoaService {
                     endereco.setCidade(dto.getCidade());
                     endereco.setNumero(dto.getNumero());
                     endereco.setLogradouro(dto.getLogradouro());
+                    if (dto.getIsPrincipal()) {
+                        pessoa.setEnderecoPrincipal(endereco);
+                    }
                     return endereco;
                 }).collect(Collectors.toList());
     }
@@ -99,6 +102,9 @@ public class PessoaServiceImpl implements PessoaService {
                     endereco.setCidade(dto.getCidade());
                     endereco.setNumero(dto.getNumero());
                     endereco.setLogradouro(dto.getLogradouro());
+                    if (dto.getIsPrincipal()) {
+                        pessoa.setEnderecoPrincipal(endereco);
+                    }
                     return endereco;
                 }).collect(Collectors.toList());
     }

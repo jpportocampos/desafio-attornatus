@@ -28,4 +28,8 @@ public class Pessoa {
 
     @OneToMany(mappedBy = "pessoa")
     private List<Endereco> enderecos;
+
+    @OneToOne
+    @JoinColumn(name = "endereco_principal")
+    private Endereco enderecoPrincipal;
 }

@@ -76,6 +76,7 @@ public class PessoaController {
                         .cep(endereco.getCep())
                         .numero(endereco.getNumero())
                         .cidade(endereco.getCidade())
+                        .isPrincipal(endereco.getPessoa().getEnderecoPrincipal() == endereco)
                         .build()
         ).collect(Collectors.toList());
     }

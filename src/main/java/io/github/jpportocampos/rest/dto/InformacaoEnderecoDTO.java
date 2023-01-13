@@ -15,4 +15,5 @@ public class InformacaoEnderecoDTO {
     private Integer cep;
     private Integer numero;
     private String cidade;
+    private Boolean isPrincipal;
 }
