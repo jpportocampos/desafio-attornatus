@@ -48,6 +48,9 @@ public class PessoaController {
 
     @GetMapping("/enderecos/{id}")
     public List<InformacoesEnderecoDTO> getEnderecos(@PathVariable Integer id) {
+        service.obterPessoaCompleto(id)
+               .map(p -> converter(p))
+               .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "Pessoa não encontrada."));
         List<Endereco> enderecos = service.obterEnderecos(id);
         return converter(enderecos);
     }

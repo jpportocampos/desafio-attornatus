@@ -72,6 +72,13 @@ public class PessoaControllerTest {
     }
 
     @Test
+    void atualizarPessoaInvalidaTest() throws Exception {
+        String pessoaJSON = objectMapper.writeValueAsString(new Pessoa());
+        this.mockMvc.perform(put("/api/pessoas/0").contentType(MediaType.APPLICATION_JSON).content(pessoaJSON)).andExpect(status().is(400))
+                .andExpect(result -> assertEquals("A pessoa solicitada não existe", result.getResolvedException().getMessage()));
+    }
+
+    @Test
     void getPessoaTest() throws Exception {
         this.mockMvc.perform(get("/api/pessoas/1")).andExpect(status().isOk())
                 .andExpect(content().string(containsString("14/05/1999")));
@@ -93,5 +100,11 @@ public class PessoaControllerTest {
     void getPessoaEnderecosTest() throws Exception {
         this.mockMvc.perform(get("/api/pessoas/enderecos/1")).andExpect(status().isOk())
                 .andExpect(content().string(containsString("Rua")));
+    }
+
+    @Test
+    void getPessoaEnderecosDadosInvalidosTest() throws Exception {
+        this.mockMvc.perform(get("/api/pessoas/enderecos/0")).andExpect(status().is(404))
+                .andExpect(result -> assertEquals("404 NOT_FOUND \"Pessoa não encontrada.\"", result.getResolvedException().getMessage()));
     }
 }
