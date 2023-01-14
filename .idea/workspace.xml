@@ -8,8 +8,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/github/jpportocampos/rest/controller/PessoaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/jpportocampos/rest/controller/PessoaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/jpportocampos/rest/dto/InformacaoEnderecoDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/jpportocampos/rest/dto/InformacoesEnderecoDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/jpportocampos/rest/dto/InformacoesPessoaDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/jpportocampos/rest/dto/InformacoesPessoaDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/jpportocampos/service/impl/PessoaServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/jpportocampos/service/impl/PessoaServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +45,8 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -102,8 +102,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.PessoaControllerTest" />
-        <item itemvalue="JUnit.PessoaControllerTest.cadastrarPessoaTest" />
         <item itemvalue="Application.DesafioApplication" />
+        <item itemvalue="JUnit.PessoaControllerTest.cadastrarPessoaTest" />
       </list>
     </recent_temporary>
   </component>
@@ -140,5 +140,20 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="io.github.jpportocampos.exception.RegraNegocioException" package="io.github.jpportocampos.exception" />
+          <option name="timeStamp" value="6" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="JUnit">
+        <watch expression="((HashMap.Node)((HashMap)cadastro).entrySet().toArray()[0]).getKey()" custom="java.util.HashMap.Node,java.util.HashMap" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

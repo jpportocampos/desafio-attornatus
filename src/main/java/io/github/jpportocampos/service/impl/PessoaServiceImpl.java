@@ -40,7 +40,9 @@ public class PessoaServiceImpl implements PessoaService {
     @Override
     @Transactional
     public Pessoa salvar(Integer id, PessoaDTO dto) {
-        Pessoa pessoa = repository.findById(id).get();
+        Pessoa pessoa = repository
+                .findById(id)
+                .orElseThrow(() -> new RegraNegocioException("A pessoa solicitada não existe"));
         pessoa.setId(id);
         pessoa.setNome(dto.getNome());
         pessoa.setDataNascimento(dto.getDataNascimento());
