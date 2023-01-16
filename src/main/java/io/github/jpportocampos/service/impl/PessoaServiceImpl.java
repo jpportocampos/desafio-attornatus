@@ -26,6 +26,10 @@ public class PessoaServiceImpl implements PessoaService {
     @Override
     @Transactional
     public Pessoa salvar(PessoaDTO dto) {
+        if (dto == null) {
+            return null;
+        }
+
         Pessoa pessoa = new Pessoa();
         pessoa.setNome(dto.getNome());
         pessoa.setDataNascimento(dto.getDataNascimento());

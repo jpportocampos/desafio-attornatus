@@ -7,8 +7,7 @@
     <list default="true" id="31e6fbec-3b79-44ef-a34e-53401ee7777a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/github/jpportocampos/rest/ApiErrors.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/jpportocampos/rest/ApiErrors.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/jpportocampos/rest/controller/PessoaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/jpportocampos/rest/controller/PessoaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/io/github/jpportocampos/controller/PessoaControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/io/github/jpportocampos/controller/PessoaControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/jpportocampos/service/impl/PessoaServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/jpportocampos/service/impl/PessoaServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +53,7 @@
       <recent name="C:\Users\jppor\desenvolvimento\meus-projetos\desafio-attornatus\src\main\java\io\github\jpportocampos\domain" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PessoaControllerTest">
+  <component name="RunManager" selected="JUnit.PessoaServiceTest">
     <configuration name="DesafioApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="io.github.jpportocampos.DesafioApplication" />
       <module name="desafio-attornatus" />
@@ -99,16 +98,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PessoaControllerTest.cadastrarPessoaTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PessoaServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="desafio-attornatus" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="io.github.jpportocampos.controller.*" />
+          <option name="PATTERN" value="io.github.jpportocampos.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="io.github.jpportocampos.controller" />
-      <option name="MAIN_CLASS_NAME" value="io.github.jpportocampos.controller.PessoaControllerTest" />
+      <option name="PACKAGE_NAME" value="io.github.jpportocampos.service" />
+      <option name="MAIN_CLASS_NAME" value="io.github.jpportocampos.service.PessoaServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PessoaServiceTest.cadastrarPessoaTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="desafio-attornatus" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.github.jpportocampos.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="io.github.jpportocampos.service" />
+      <option name="MAIN_CLASS_NAME" value="io.github.jpportocampos.service.PessoaServiceTest" />
       <option name="METHOD_NAME" value="cadastrarPessoaTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -117,10 +131,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PessoaServiceTest" />
+        <item itemvalue="JUnit.PessoaServiceTest.cadastrarPessoaTest" />
         <item itemvalue="JUnit.PessoaControllerTest" />
         <item itemvalue="JUnit.PessoaControllerTest.atualizarPessoaInvalidaTest" />
         <item itemvalue="Application.DesafioApplication" />
-        <item itemvalue="JUnit.PessoaControllerTest.cadastrarPessoaTest" />
       </list>
     </recent_temporary>
   </component>
@@ -164,6 +179,10 @@
         <breakpoint enabled="true" type="java-exception">
           <properties class="io.github.jpportocampos.exception.RegraNegocioException" package="io.github.jpportocampos.exception" />
           <option name="timeStamp" value="6" />
+        </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="9" />
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>
